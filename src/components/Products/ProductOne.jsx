@@ -24,7 +24,6 @@ const ProductOne = () => {
       .catch(e => console.log("Error: ", e.message))
     dispatch(setProduct(response.data))
   }
-  console.log(products)
   useEffect(() => {
     fetchProducts()
   }, [])
